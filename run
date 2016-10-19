@@ -1,0 +1,7 @@
+#!bin/bash
+
+g++ -c main.cpp -I $PWD/SFML/include/ -o game.o
+g++ game.o -o sfml-app -L $PWD/SFML/lib/ -lsfml-graphics -lsfml-window -lsfml-system
+export LD_LIBRARY_PATH=$PWD/SFML/lib && ./sfml-app
+rm game.o
+rm sfml-app
