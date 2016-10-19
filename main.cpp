@@ -8,7 +8,7 @@ int width = 800;
 
 int main()
 {
-    RenderWindow window(VideoMode(width, height), "SFML works!");
+    RenderWindow window(VideoMode(width, height), "SFML for gamejam works!");
     window.setPosition(Vector2i((1920 - width) / 2, (1080 - height) / 2));
     Game game(100, 100, -0.1, 0.1);
     while (window.isOpen())
